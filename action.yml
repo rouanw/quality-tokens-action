@@ -1,0 +1,12 @@
+name: 'Quality Tokens'
+description: 'Accept commits that have already been verified as passing quality checks'
+inputs:
+  test:
+    description: 'Test'
+    required: false
+outputs:
+  accepted:
+    description: 'Has the change been accepted as verified'
+runs:
+  using: 'node16'
+  main: 'index.js'
