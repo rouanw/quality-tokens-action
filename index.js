@@ -1,1 +1,1 @@
-console.log(context);
+core.info(context);
