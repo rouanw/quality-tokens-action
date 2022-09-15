@@ -1,2 +1,5 @@
 const core = require('@actions/core');
-core.info(context);
+const github = require('@actions/github');
+
+const context = github.context;
+core.info(JSON.stringify(context, null, 2));
