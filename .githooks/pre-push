@@ -1,0 +1,7 @@
+#!/bin/bash -e
+
+echo
+
+SHA=`git rev-parse HEAD`
+git notes add -m "quality_token: $SHA"
+

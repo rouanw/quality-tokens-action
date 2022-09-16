@@ -2,7 +2,8 @@
     "name": "quality-tokens-action",
     "version": "1.0.0",
     "dependencies": {
-      "@actions/core": "latest",
-      "@actions/github": "latest"
+        "@actions/core": "latest",
+        "@actions/exec": "^1.1.1",
+        "@actions/github": "latest"
     }
 }
