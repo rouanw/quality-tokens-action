@@ -22,7 +22,6 @@ options.listeners = {
         myError += data.toString();
     }
 };
-options.cwd = './';
 
 const validate = (note, sha) => {
     return true;
@@ -30,6 +29,8 @@ const validate = (note, sha) => {
 
 (async () => {
     try {
+        await exec.exec('ls', ['-la']);
+        await exec.exec('git', ['log']);
         await exec.exec('git', ['notes', 'list', sha], options);
         const [noteRef] = myOutput.split('\n');
         myOutput = '';
